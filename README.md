@@ -49,7 +49,13 @@ You can test/see all the api with detail information on postman by joining works
 
 Please follow below postman collection documentation for APIs.
 
-### Client Api  Documentation
+API Base URL:
+
+```dotenv
+API_URL : http://localhost:8088/
+```
+
+### Client Api Documentation
 
 Postman Documentation URL : [https://documenter.getpostman.com/view/10512621/UVsSNPaF](https://documenter.getpostman.com/view/10512621/UVsSNPaF)
 
@@ -61,6 +67,7 @@ Authentication type : API key
 key : apitoken
 value: API_TOKEN (Token has been defined in .env)
 ```
+
 
 
 ### Admin Api  Documentation
