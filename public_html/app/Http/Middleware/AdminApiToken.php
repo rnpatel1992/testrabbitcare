@@ -20,7 +20,7 @@ class AdminApiToken
         $apptoken = $request->header('apitoken');
 
         if ($apptoken && $apptoken != env('ADMIN_API_KEY')) {
-            //return response()->json('Unauthorized', 401);
+            return response()->json('Unauthorized', 401);
         } 
         return $next($request);
     }
