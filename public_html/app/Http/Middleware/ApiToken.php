@@ -18,7 +18,7 @@ class ApiToken
     {
         $apptoken = $request->header('apitoken');
        
-        if ($apptoken && $apptoken != env('API_KEY')) {
+        if ($apptoken != env('API_KEY')) {
             return response()->json('Unauthorized', 401);
         } 
         return $next($request);
